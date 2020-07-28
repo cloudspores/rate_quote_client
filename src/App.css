@@ -1,0 +1,62 @@
+.App {
+    width: 90%;
+    margin: auto;
+}
+
+.App-logo {
+    height: 10vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #bdc3cf;
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.App-title {
+    margin-left: 13px;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.Grid-panel {
+    height: 500px;
+    width: 100%;
+}
+
+.customHeaderMenuButton,
+.customHeaderLabel,
+.customHeaderLabel,
+.customSortDownLabel,
+.customSortUpLabel,
+.customSortRemoveLabel {
+    margin-top: 2px;
+    margin-left: 4px;
+    float: left;
+    font-size: 24px !important;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,12 @@
+# api keys!!
+.env
+
+# dependencies
+/node_modules
+
+#misc
+yarn.lock
+testdata.json
+logo.svg
+.history
+code-challenge.yaml
