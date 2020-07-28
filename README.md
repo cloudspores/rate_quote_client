@@ -41,8 +41,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Configuration and Deployment
 Manually add .env file into the newly created build folder:
 - `touch .env` will create an empty `.env` file that you can then open in the nano editor using `nano .env`
-- enter the following, replacing the placeholder with your API key. Save the file and exit out of the editor.
+- enter the following, replacing the first placeholder with your API key and the second with the endpoint. Save the file and exit out of the editor.
 `REACT_APP_API_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+`REACT_APP_AUTHORITY=xxxxxx://xxxxxxxxxxxxxxxxxx/xxxx/xxxxxx`
 
 The build folder is now ready to be deployed.
 You may serve it with a static server:
