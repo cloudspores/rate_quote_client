@@ -1,5 +1,14 @@
 ![alt text](https://github.com/cloudspores/rate_quote_client/blob/master/ScreenShot.png?raw=true)
 
+## Description
+Rate Quote application using React and Redux that allows a user to enter loan information and then display rate quotes retrieved from the OwnUp Service via a REST interface.
+This application aims to provide quotes from multiple local lenders for the best rate for the customer.
+
+The intial goal was to build a JS client API kit from the swagger spec file - please see the Rate-Quote-Client-SDK repository. There were some issues getting React to call out to the SDK library generated using swagger-codegen:
+`swagger-codegen generate -i ./code-challenge.yaml -l javascript -o . --additional-properties usePromises=true,useES6=true`
+
+The code as it stands does not use the code generated SDK. It is however a worthwhile pursuit, particularly for code robustness and testing. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -29,6 +38,22 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Configuration and Deployment
+Manually add .env file into the newly created build folder:
+- `touch .env` will create an empty `.env` file that you can then open in the nano editor using `nano .env`
+- enter the following, replacing the placeholder with your API key. Save the file and exit out of the editor.
+`REACT_APP_API_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+
+The build folder is now ready to be deployed.
+You may serve it with a static server:
+
+- `yarn global add serve`
+- `serve -s build`
+
+Find out more about deployment here:
+
+ [bit.ly/CRA-deploy](bit.ly/CRA-deploy)
+  
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
