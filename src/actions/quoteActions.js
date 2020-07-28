@@ -24,14 +24,13 @@ const getQueryString = (params) => {
         .join('&');
 };
 
-const BASE_URL =
-    'https://ss6b2ke2ca.execute-api.us-east-1.amazonaws.com/Prod/quotes?';
+const BASE_URL = process.env.REACT_APP_AUTHORITY + '?';
 
 export const fetchQuotes = (params) => (dispatch) => {
     fetch(BASE_URL + getQueryString(params), {
         headers: {
             'Cache-Control': 'no-cache',
-            'Authorization': 'OU-AUTH '+ `${process.env.REACT_APP_API_KEY}`,
+            Authorization: 'OU-AUTH ' + `${process.env.REACT_APP_API_KEY}`,
         },
     })
         .then((res) => res.json())
