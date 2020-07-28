@@ -1,5 +1,7 @@
 ![alt text](https://github.com/cloudspores/rate_quote_client/blob/master/ScreenShot.png?raw=true)
 
+Rate Quote webpage using React and Redux that allows a user to enter loan information and then display rate quotes from OwnUp API.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
