@@ -38,12 +38,22 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Configuration
+## Configuration and Deployment
 Manually add .env file into the newly created build folder:
 - `touch .env` will create an empty `.env` file that you can then open in the nano editor using `nano .env`
 - enter the following, replacing the placeholder with your API key. Save the file and exit out of the editor.
 `REACT_APP_API_KEY=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 
+The build folder is now ready to be deployed.
+You may serve it with a static server:
+
+- `yarn global add serve`
+- `serve -s build`
+
+Find out more about deployment here:
+
+ [bit.ly/CRA-deploy](bit.ly/CRA-deploy)
+  
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
