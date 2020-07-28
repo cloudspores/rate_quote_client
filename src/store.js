@@ -20,7 +20,7 @@ const middleware = [thunk];
 //
 // createStore(reducer, [preloadedState], [enhancer])
 // - reducer (Function) -> a reducing function that returns the next state tree, given the current state tree and action to handle.
-//              See ./reducers/postReducer.js. May combine other reducers and pass in here. For example auth reducer for autehntication.
+//              See ./reducers/quoteReducer.js. May combine other reducers and pass in here. For example auth reducer for autehntication.
 // - [preloadedState] (any) -> The inital state.
 // - [enhancer] (Function) -> The store enhancer. In this case for middleware and Redux chrome extension for monitoring states and actions.
 const store = createStore(
