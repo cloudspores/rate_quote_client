@@ -1,4 +1,4 @@
-![alt text](https://github.com/cloudspores/rate_quote_client/blob/master/ScreenShot.png?raw=true)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
