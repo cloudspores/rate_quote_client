@@ -20,9 +20,6 @@ class QuoteForm extends Component {
 
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
-
-        // Load API key from config file
-        
     }
 
     onChange(e) {
@@ -132,7 +129,7 @@ class QuoteForm extends Component {
 }
 
 QuoteForm.propTypes = {
-    fetchQuotes: PropTypes.func.isRequired
+    fetchQuotes: PropTypes.func.isRequired,
 };
 
 export default connect(null, { fetchQuotes })(QuoteForm);
